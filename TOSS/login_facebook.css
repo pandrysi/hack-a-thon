@@ -1,0 +1,239 @@
+.clearfix {
+  clear: both !important;
+  height: 50px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar {
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+#slide1 {
+  min-height: 1000px;
+  background: linear-gradient(rgba(0, 10, 30, .3), rgba(0, 10, 30, .3)), url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1907&q=80");
+
+}
+
+ex1 {
+  background-color: white;
+  width: auto;
+  height: auto;
+  overflow: scroll;
+}
+
+#slide1 p {
+  color: white;
+  min-height: 500px;
+  font-size: 35px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+h1 {
+  color: white;
+  min-height: 850px;
+  font-size: 50px; center;
+  padding-top: 300px;
+}
+
+h2 {
+  color: white;
+  min-height: 300px;
+  font-size: 50px; center;
+  padding-top: 120px;
+}
+
+#slide2 h3 {
+  font-size: 35px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+#slide2 blockquote {
+  font-size: 35px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+#slide3 h3 {
+  font-size: 35px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+#slide3 blockquote {
+  font-size: 35px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+#slide2 {
+  color: white;
+  min-height: 1000px;
+  background: #19334d;
+
+  margin-bottom: 0;
+}
+
+#slide3 {
+  color: white;
+  min-height: 1000px;
+  background: #19334d;
+
+  margin-bottom: 0;
+}
+
+#slide4 p {
+    -moz-transform: scale(5); /* for Firefox, default 1*/
+    zoom:500%; /* For Chrome, IE, default 100%*/
+}
+
+#slide4 {
+  color: white;
+  min-height: 1000px;
+  background: #19334d;
+
+  margin-bottom: 0;
+}
+
+element {
+}
+form {
+    margin: 0;
+    padding: 0;
+}
+#facebook ._-kb div {
+    font-family: inherit;
+}
+div._4-i2 {
+    word-wrap: break-word;
+}
+._50f4 {
+    font-size: 14px;
+    line-height: 18px;
+}
+._31nc {
+    text-align: center;
+}
+._59s7 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+#facebook ._-kb.apple {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+}
+#facebook ._-kb.mac {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+body, button, input, label, select, td, textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+body {
+    color: #1d2129;
+    direction: ltr;
+    line-height: 1.34;
+}
+
+
+element {
+
+}
+#facebook ._-kb button, #facebook ._-kb input, #facebook ._-kb label, #facebook ._-kb select, #facebook ._-kb td, #facebook ._-kb textarea {
+
+    font-family: inherit;
+
+}
+._31nc ._3317, ._31nc ._31nj, ._31nc ._31ni {
+
+    display: block;
+    margin: 0 auto 12px;
+    width: 230px;
+
+}
+html ._55r2 {
+
+    height: 30px;
+
+}
+html ._55r1 {
+
+    background: #FFFFFF url(/rsrc.php/v3/yO/r/YQNfPR9MJfx.png) repeat-x;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 22px;
+    line-height: 16px;
+    padding: 0 8px;
+    vertical-align: middle;
+
+}
+.inputtext, .inputpassword {
+
+    padding-bottom: 4px;
+
+}
+textarea, .inputtext, .inputpassword {
+
+    border: 1px solid #bdc7d8;
+    margin: 0;
+    padding: 3px;
+
+}
+body, button, input, label, select, td, textarea {
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+
+}
+input, select, textarea {
+
+    background-color: #fff;
+    color: #1d2129;
+
+}
+#facebook ._-kb div {
+
+    font-family: inherit;
+
+}
+div._4-i2 {
+
+    word-wrap: break-word;
+
+}
+._50f4 {
+
+    font-size: 14px;
+    line-height: 18px;
+
+}
+._31nc {
+
+    text-align: center;
+
+}
+._59s7 {
+
+    font-family: Helvetica, Arial, sans-serif;
+
+}

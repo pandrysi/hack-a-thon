@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadata for the Webpage -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>twitter.</title><!-- Bootstrap CSS files-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><!-- Google Open Sans web font -->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet"><!-- Font Awesome Web Icons -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">toss.</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">home</a></li>
+          <li><a href="#slide2" class="scroll-link">what</a></li>
+          <li><a href="#slide3" class="scroll-link">why</a></li>
+          <li><a href="#slide4" class="scroll-link">how</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="clearfix"></div>
+  <div class="text-center">
+    <!-- Jumbotron -->
+
+    <fieldset>
+
+      <legend class="visuallyhidden">Log in</legend>
+
+      <div class="clearfix field">
+        <input class="js-username-field email-input js-initial-focus" type="text" name="session[username_or_email]" autocomplete="on" value="" placeholder="Phone, email or username">
+      </div>
+      <div class="clearfix field">
+        <input class="js-password-field" type="password" name="session[password]" placeholder="Password">
+      </div>
+
+      <input type="hidden" value="0bdbc3a8132dfd071ae7fde6d96f36357e6bbeac" name="authenticity_token">
+
+      <input type="hidden" name="ui_metrics" autocomplete="off"
+        value="{&quot;rf&quot;:{&quot;a0ac0b7cd326d7550fb47e2c91660e2c10f8c95c56a99085eae3f16c36be2ffd&quot;:223,&quot;cff4b8209d041a5bfc731723a1b7a03bc9f81c360d01817363e1839b31851aaf&quot;:-8,&quot;a11b5a409414811523edd6371b87dfed4fe22d97c66a553f288163e572dce4ca&quot;:9,&quot;d4749a4fcbc3b3da9d03b4fc0c08fed224611f79415b47a3f45e6b466920db1c&quot;:77},&quot;s&quot;:&quot;CUXxkB5SnvtZce1YJsIECbg2RT9a_iJittAOFwQVPAyxfr1aU_sAzxtA5QfIKpjbj5am7Wdum4NlniGrtKfxo4Lks8OKEWc4bFf5-QC5PW8zYIWsAE0YF6Wtx2Vymi-H4c1FnWfLrL2CLxBDg9iswv-f8c7PkdtTilU3dHYrnYH6PgYARzNxq1LUwv33owbvLCH-MHU6N0poVBwdjS_YBrq_2KC3SatKohTlJGZY2gr6ai2Awb8tXriUdj2TbVsWPGr3OH93F_2iXXnYm9sxFcOMELK2xiPaD2cTndOY7cmO4jdbJn-1VnOailaBqfUKzyUArjh8Ws4j6M96FKEeDQAAAWnUQ8Mo&quot;}">
+      <script src="/i/js_inst?c_name=ui_metrics" async=""></script>
+
+    </fieldset>
+
+    <div class="captcha js-captcha">
+    </div>
+    <div class="clearfix">
+
+      <input type="hidden" name="scribe_log">
+      <input type="hidden" name="redirect_after_login" value="">
+      <input type="hidden" value="0bdbc3a8132dfd071ae7fde6d96f36357e6bbeac" name="authenticity_token">
+      <form action="run.html">
+        <button type="submit" class="submit EdgeButton EdgeButton--primary EdgeButtom--medium" href="login_twitter.html">Log in</button>
+      </form>
+      <div class="subchck">
+        <label class="t1-label remember">
+          <input type="checkbox" value="1" name="remember_me" checked="checked">
+          Remember me
+          <span class="separator">·</span>
+          <a class="forgot" href="/account/begin_password_reset" rel="noopener">Forgot password?</a>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!-- container -->
+
+  <footer class="footer">
+    <div class="container">
+      <hr>
+      <p class="text-muted">Made by Hungry Hungry Hackers <i class="fa fa-fw fa-copyright" aria-hidden="true"></i> 2019</p>
+    </div>
+  </footer><!-- jQuery Javascript Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- Bootstrap Library -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function() {
+      // In-page sccroll-to links
+      $("a.scroll-link").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({
+          scrollTop: $($(this).attr("href")).offset().top - 100
+        }, 500, "easeOutQuad");
+      });
+    });
+  </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadata for the Webpage -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>twitter.</title><!-- Bootstrap CSS files-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><!-- Google Open Sans web font -->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet"><!-- Font Awesome Web Icons -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="login_facebook.css">
+
+</head>
+
+<body>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">toss.</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">home</a></li>
+          <li><a href="#slide2" class="scroll-link">what</a></li>
+          <li><a href="#slide3" class="scroll-link">why</a></li>
+          <li><a href="#slide4" class="scroll-link">how</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="clearfix"></div>
+  <div class="ex1">
+    <!-- Jumbotron -->
+    <input type="hidden" name="jazoest" value="2725" autocomplete="off"><input type="hidden" name="lsd" value="AVoDJUrz" autocomplete="off"><input type="text" class="inputtext _55r1 _55r2 _3317" id="email" name="email"
+      placeholder="Email or Phone Number" aria-label="Email or Phone Number">
+    <div><input type="password" class="inputtext _55r1 _55r2 _31nj" id="pass" name="pass" placeholder="Password" aria-label="Password"></div><input type="hidden" autocomplete="off" id="cred_type" name="cred_type" value="100"><input type="hidden"
+      autocomplete="off" id="login_source" name="login_source" value="device_based_login_add_account">
+    <div class="_3-8n _5_bi">
+      <div class="uiInputLabel clearfix _2j4v"><label class="_kv1 _55sg uiInputLabelInput"><input type="checkbox" name="savepass" value="" id="u_0_1k"><span class="_66ul"></span></label><label for="u_0_1k" class="uiInputLabelLabel">Remember
+          password</label></div>
+    </div><input type="hidden" autocomplete="off" checked="1" name="persistent">
+    <div class="_3-8o"><button value="1" class="_42ft _4jy0 _31ni _4jy5 _4jy1 selected _51sy" type="submit">Log In</button></div>
+    <hr class="_3-8o">
+    <div class="_3d7w"><a href="/recover/initiate/?ars=www_account_switcher">Forgot password?</a></div>
+  </div>
+  <!-- container -->
+
+  <footer class="footer">
+    <div class="container">
+      <hr>
+      <p class="text-muted">Made by Hungry Hungry Hackers <i class="fa fa-fw fa-copyright" aria-hidden="true"></i> 2019</p>
+    </div>
+  </footer><!-- jQuery Javascript Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- Bootstrap Library -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function() {
+      // In-page sccroll-to links
+      $("a.scroll-link").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({
+          scrollTop: $($(this).attr("href")).offset().top - 100
+        }, 500, "easeOutQuad");
+      });
+    });
+  </script>
+
+
+
+</body>
+
+</html>

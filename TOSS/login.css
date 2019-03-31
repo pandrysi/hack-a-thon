@@ -1,0 +1,169 @@
+.clearfix {
+  clear: both !important;
+  height: 50px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar {
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+#slide1 {
+  min-height: 1000px;
+  background: linear-gradient(rgba(0, 10, 30, .3), rgba(0, 10, 30, .3)), url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1907&q=80");
+
+}
+
+ex1 {
+  background-color: white;
+  width: auto;
+  height: auto;
+  overflow: scroll;
+}
+
+#slide1 p {
+  color: white;
+  min-height: 500px;
+  font-size: 35px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+h1 {
+  color: white;
+  min-height: 850px;
+  font-size: 50px; center;
+  padding-top: 300px;
+}
+
+h2 {
+  color: white;
+  min-height: 300px;
+  font-size: 50px; center;
+  padding-top: 120px;
+}
+
+#slide2 h3 {
+  font-size: 35px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+#slide2 blockquote {
+  font-size: 35px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+#slide3 h3 {
+  font-size: 35px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+#slide3 blockquote {
+  font-size: 35px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+#slide2 {
+  color: white;
+  min-height: 1000px;
+  background: #19334d;
+
+  margin-bottom: 0;
+}
+
+#slide3 {
+  color: white;
+  min-height: 1000px;
+  background: #19334d;
+
+  margin-bottom: 0;
+}
+
+#slide4 p {
+    -moz-transform: scale(5); /* for Firefox, default 1*/
+    zoom:500%; /* For Chrome, IE, default 100%*/
+}
+
+#slide4 {
+  color: white;
+  min-height: 1000px;
+  background: #19334d;
+
+  margin-bottom: 0;
+}
+.EdgeButton--primary {
+    background-color: #1da1f2;
+    border: 1px solid #1da1f2;
+    color: #fff;
+}
+
+.EdgeButton, .EdgeButton:visited {
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+
+button {
+    background: transparent;
+        background-color: transparent;
+    border: 0;
+    padding: 0;
+    transition: box-shadow .15s ease-in-out;
+}
+
+
+element {
+
+}
+.signin .field {
+
+    margin-bottom: 15px;
+
+}
+body {
+
+    color: #14171a;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+body {
+
+    -moz-osx-font-smoothing: grayscale;
+
+}
+body {
+
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
