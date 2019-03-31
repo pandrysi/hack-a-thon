@@ -137,8 +137,10 @@ h2 {
 }
 
 .twitter {
+  overflow: scroll;
   width: 50%;
   float: left;
+  max-height: 600px;
 }
 .twitter img {
   width: 100%;
