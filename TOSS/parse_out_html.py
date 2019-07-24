@@ -1,18 +1,5 @@
 #!/usr/bin/env python3
 
-#------------------------------------------------------------------
-# This is a script that takes in the timeline data from a specified
-# user and passes it through a filter that searches for certain
-# keywords that are deemed innapropriate for online usage.
-# Created: 7/22/2019
-#------------------------------------------------------------------
-
-# Possible additions:
-# OPTIMIZE IT. LESS LISTS AND MORE GENERATORS
-# Add tiers of filtering (ex. Fuck is high tier and vodka is low tier)
-# Allow for the addition of other words to look for
-# Implement full timeline history checking
-
 import pprint
 import json
 import re
