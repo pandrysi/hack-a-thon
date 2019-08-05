@@ -20,9 +20,9 @@ import cgitb
 import tweepy
 import itertools
 
-swear = ['fuck','shit','bitch','dick','drunk']
+swear = ['fuck','shit','bitch','dick','drunk','slut', 'whore', 'asshole', 'ass', 'cunt']
 slang = ['i can\'t even', 'lit', 'turnt', 'chill', 'gucci']
-alc = ['vodka', 'tequila', 'rum', 'jager', 'sake', 'beer', 'natty', 'whiteclaw']
+alc = ['vodka', 'tequila', 'rum', 'jager', 'sake', 'beer', 'natty', 'whiteclaw', 'slammer', 'four loko', 'floko']
 
 def auth_twitter(key="XXiOOh6ikh26NpVaVhNnVMXlF", sec_key="TigPzzltfJVMbuyjKgI1mwaaASoiTK9jD7IpCOXE8jPkNnj2YM", token="724802479-Qt76oHn3clpt72jZiQs7OL5N7dGLqcgUDN5s2O1q", sec_tok="2F6gAUeYbNzOGSCIGEjIL27rbEtFjNXQada4d98THpASb"):
     auth = tweepy.OAuthHandler(key, sec_key)
@@ -46,13 +46,12 @@ def get_tweets(username, api, pages, rt):
     # Get all the tweets from the user's timeline within the page range
     for i in range(pages):
         tweets = api.user_timeline(screen_name=username, page = i)
-        pprint.pprint(tweets)
 
         # Store the url and tweet in a dictionary as a key value pair
         if rt == 'n':
-            tweet_list = [{"https://twitter.com/" + t.user.screen_name + "/status/" + str(t.id): (t.text, t.entities.media_url_https)} for t in tweets if re.search('RT', t.text) == None]
+            tweet_list = [{"https://twitter.com/" + t.user.screen_name + "/status/" + str(t.id): t.text} for t in tweets if re.search('RT', t.text) == None]
         else:
-            tweet_list = [{"https://twitter.com/" + t.user.screen_name + "/status/" + str(t.id): (t.text, t.entities.media_url_https)} for t in tweets]
+            tweet_list = [{"https://twitter.com/" + t.user.screen_name + "/status/" + str(t.id): t.text} for t in tweets]
         for t in tweet_list:
             statuses.update(t)
 
@@ -66,7 +65,7 @@ def search_tweets(tweet_dict, flags):
     # matches in the flags list
     for u, t in tweet_dict.items():
         for f in flags:
-            if not re.search(f, t) == None:
+            if not re.search(f, t, re.I) == None:
                 print("Found the word {} in \"{}\".".format(f, t))
                 flagged_dict.update({u: t})
 
