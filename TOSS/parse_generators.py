@@ -8,8 +8,8 @@
 #------------------------------------------------------------------
 
 # Possible additions:
-# Add tiers of filtering (ex. Fuck is high tier and vodka is low tier)
 # Allow for the addition of other words to look for
+# Add multiprocessing
 
 import pprint
 import json
@@ -22,9 +22,17 @@ import multiprocessing
 import time
 import requests
 
+TIER1 = ['fuck', 'bitch', 'slut', 'whore', 'cunt', 'death']
+TIER2 = ['slammer', 'floko', 'four loko', 'asshole', 'cock']
+TIER3 = ['shit', 'dick', 'ass', 'vodka', 'rum', 'chill', 'lit', 'gucci']
+
+ALL = TIER1 + TIER2 + TIER3
+
+'''
 swear = ['fuck','shit','bitch','dick','drunk','slut', 'whore', 'asshole', 'ass', 'cunt']
 slang = ['i can\'t even', 'lit', 'turnt', 'chill', 'gucci']
 alc = ['vodka', 'tequila', 'rum', 'jager', 'sake', 'beer', 'natty', 'whiteclaw', 'slammer', 'four loko', 'floko']
+'''
 
 ISGD_URL = 'http://is.gd/create.php'
 
@@ -48,13 +56,13 @@ def get_tweets(username, api, rt, choice, shorten):
     statuses = dict()
 
     if choice == 1:
-        flags = swear
+        flags = TIER1
     elif choice == 2:
-        flags = slang
+        flags = TIER2
     elif choice == 3:
-        flags = alc
+        flags = TIER3
     else:
-        flags = swear + slang + alc
+        flags = ALL
 
     # Get all the tweets from the user's timeline and pass them through the filter to see if they are allowed
     c = tweepy.Cursor(api.user_timeline, id=username).items()
@@ -117,12 +125,9 @@ if __name__=='__main__':
     rt = input("Would you like to see retweets as well? (y/n)")
     shorten = input("Would you like to shorten the URL? (y/n)")
 
-    print("\nWhat key words would you like to search your tweets for?\n\t1. Swear words\n\t2. Slang\n\t3. Alcohol/Drug References\n\t4. All of the above (Default)\n")
+    print("\nWhat level of words would you like to filter for?\n\t1. Tier 1 (ex: Fuck)\n\t2. Tier 2 (ex: Asshole)\n\t3. Tier 3 (ex: Shit)\n\t4. All of the above (Default)\n")
     choice = input("Enter selection: ")
     choice = int(choice)
-
-    flagged = dict()
-    all = swear + slang + alc
 
     count = 0
     # Return all the tweets
