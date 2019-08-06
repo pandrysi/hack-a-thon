@@ -97,10 +97,10 @@ def search_tweets(tweet, flags):
 
     return found
 
+# Work in progress
 def shorten_url(url):
-	url = requests.get(ISGD_URL, params={'format': 'json', 'url': url})
-	url = url.json()
-	url = url['shorturl']
+	url = requests.get(ISGD_URL, params={'format': 'simple', 'url': url})
+	#url = url['shorturl']
 	return url
 
 if __name__=='__main__':
