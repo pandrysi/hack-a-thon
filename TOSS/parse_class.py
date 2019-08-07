@@ -11,6 +11,12 @@
 # Allow for the addition of other words to look for
 # Add multiprocessing
 
+
+#=========================
+#
+# Not working
+#
+#========================
 import pprint
 import json
 import re
@@ -83,8 +89,9 @@ class Parse:
     #=======================================
     def get_tweets(username, rt, choice, shorten):
 
+        shorten = False
         # Generate the API
-        api = auth_twitter()
+        api = Parse.auth_twitter()
 
         # Choose the flags based on the user's selection
         if choice == 1:
@@ -106,16 +113,16 @@ class Parse:
                 url = "https://twitter.com/" + tweet.user.screen_name + "/status/" + str(tweet.id)
                 # Shorten the URL option
                 if shorten:
-                    url = shorten_url(url)
+                    url = Parse.shorten_url(url)
 
                 # Make the url and tweet a key value pair
                 t = {"https://twitter.com/" + tweet.user.screen_name + "/status/" + str(tweet.id): tweet.text}
                 if rt and re.search('RT', tweet.text) == None:
-                    found = search_tweets(tweet.text, flags)
+                    found = Parse.search_tweets(tweet.text, flags)
                     if found:
                         yield t
                 else:
-                    found = search_tweets(tweet.text, flags)
+                    found = Parse.search_tweets(tweet.text, flags)
                     if found:
                         yield t
 

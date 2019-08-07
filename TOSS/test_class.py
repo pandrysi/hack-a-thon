@@ -12,7 +12,6 @@ print(parse.rt)
 print(parse.choice)
 print(parse.shorten)
 
-''''
-for i in parse.get_tweets():
+
+for i in parse.get_tweets(parse.username, parse.rt, parse.choice):
     pprint.pprint(i)
-'''
