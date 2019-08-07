@@ -11,12 +11,6 @@
 # Allow for the addition of other words to look for
 # Add multiprocessing
 
-
-#=========================
-#
-# Not working
-#
-#========================
 import pprint
 import json
 import re
@@ -87,24 +81,22 @@ class Parse:
     # obtains them, filters them, then returns them
     #
     #=======================================
-    def get_tweets(username, rt, choice, shorten):
-
-        shorten = False
+    def get_tweets(self):
         # Generate the API
         api = Parse.auth_twitter()
 
         # Choose the flags based on the user's selection
-        if choice == 1:
+        if self.choice == 1:
             flags = TIER1
-        elif choice == 2:
+        elif self.choice == 2:
             flags = TIER2
-        elif choice == 3:
+        elif self.choice == 3:
             flags = TIER3
         else:
             flags = ALL
 
         # Get all the tweets from the user's timeline and pass them through the filter to see if they are allowed
-        c = tweepy.Cursor(api.user_timeline, id=username).items()
+        c = tweepy.Cursor(api.user_timeline, id=self.username).items()
 
         while True:
             # Error checking
@@ -117,7 +109,7 @@ class Parse:
 
                 # Make the url and tweet a key value pair
                 t = {"https://twitter.com/" + tweet.user.screen_name + "/status/" + str(tweet.id): tweet.text}
-                if rt and re.search('RT', tweet.text) == None:
+                if self.rt and re.search('RT', tweet.text) == None:
                     found = Parse.search_tweets(tweet.text, flags)
                     if found:
                         yield t

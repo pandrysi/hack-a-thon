@@ -3,7 +3,7 @@
 from parse_class import Parse
 import pprint
 
-parse = Parse(new_username='kyleedwards_27', new_rt=True, new_choice=1, new_shorten=False)
+parse = Parse(new_username='riddel_me_this', new_rt=True, new_choice=1, new_shorten=False)
 
 print(type(parse))
 
@@ -13,5 +13,5 @@ print(parse.choice)
 print(parse.shorten)
 
 
-for i in parse.get_tweets(parse.username, parse.rt, parse.choice):
+for i in parse.get_tweets():
     pprint.pprint(i)
